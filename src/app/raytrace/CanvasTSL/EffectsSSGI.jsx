@@ -1,7 +1,6 @@
 'use client'
 import { useFrame, useThree } from '@react-three/fiber'
 import { useEffect, useRef, useState } from 'react'
-// import { DRACOLoader, GLTFLoader, HDRLoader } from 'three/examples/jsm/Addons.js'
 import Stats from 'three/examples/jsm/libs/stats.module.js'
 import { bloom } from 'three/examples/jsm/tsl/display/BloomNode.js'
 import { ssgi } from 'three/examples/jsm/tsl/display/SSGINode.js'

@@ -8,11 +8,6 @@ import {
   useGLTF,
 } from "@react-three/drei";
 import { useFrame, useThree } from "@react-three/fiber";
-import {
-  Bloom,
-  EffectComposer,
-  EffectComposerContext,
-} from "@react-three/postprocessing";
 import { Suspense, useEffect, useMemo, useRef, useState } from "react";
 import { Color, Group, MathUtils, Matrix4 } from "three";
 import { clone } from "three/examples/jsm/utils/SkeletonUtils.js";
@@ -197,9 +192,10 @@ function Face({ dataFace }: { dataFace: any }) {
   useFrame((st) => {
     //
     if (st.camera) {
-      st.camera.fov = 40;
-      st.camera.aspect = st.size.width / st.size.height;
-      st.camera.updateProjectionMatrix();
+      let cam: any = st.camera;
+      cam.fov = 40;
+      cam.aspect = st.size.width / st.size.height;
+      cam.updateProjectionMatrix();
     }
 
     let list: any | { current: any[] } = dataFace?.current;

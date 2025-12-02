@@ -1,5 +1,4 @@
 "use client";
-import { Canvas } from "@react-three/fiber";
 import { Suspense } from "react";
 import { HeadObject } from "./_ui/HeadObject/HeadObject";
 import { CanvasTSL, TSLContext } from "./CanvasTSL/CanvasTSL";
