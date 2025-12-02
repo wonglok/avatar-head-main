@@ -6,7 +6,7 @@ import { CanvasTSL, TSLContext } from "./CanvasTSL/CanvasTSL";
 export default function Home() {
   return (
     <div className="w-full h-full bg-white">
-      <TSLContext render="basic">
+      <TSLContext render="raytrace">
         <CanvasTSL>
           {/*  */}
 
