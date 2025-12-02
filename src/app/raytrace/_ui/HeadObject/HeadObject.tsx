@@ -169,6 +169,8 @@ export function HeadObject() {
   );
 }
 
+//
+
 function Face({ dataFace }: { dataFace: any }) {
   let glb = useGLTF(
     `/ai/face/wonglok-frontface/wonglok-goodone-transformed-2k.glb`
