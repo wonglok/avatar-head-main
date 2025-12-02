@@ -9,6 +9,10 @@ export default function Home() {
           <a href={`/raytrace`}>raytrace</a>
         </li>
 
+        <li className="text-block">
+          <a href={`/basic`}>basic</a>
+        </li>
+
         {/*  */}
       </ul>
     </div>
